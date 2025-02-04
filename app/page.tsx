@@ -3,28 +3,20 @@ import Link from "next/link";
 
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
+    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-mono">
       <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        {/* <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        /> */}
-        <ol className="list-inside  text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
+        <ol className="list-inside  text-sm text-center sm:text-left font-mono">
           <li className="mb-2">
           <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded">
               🔒 https://
             </code>{ " " }
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
+            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded">
               rstr.ing
             </code>
           </li>
         </ol>
-        <p className="text-sm">This site has existed in the shadows, its presence unseen, its purpose unknown. Now, the veil is lifted. What you find here has waited—patiently, quietly.</p>
-        <p className="text-sm italic">Non omne quod sepultum est manet oblivione. Non omne quod oblivione traditum est reperiri debet.</p>
+        <p className="text-sm font-mono">This site has existed in the shadows, its presence unseen, its purpose unknown. Now, the veil is lifted. What you find here has waited—patiently, quietly.</p>
+        <p className="text-sm">Non omne quod sepultum est manet oblivione. Non omne quod oblivione traditum est reperiri debet.</p>
       </main>
       <footer className="row-start-3 flex gap-2 flex-wrap items-center justify-center text-sm">
         <Image
